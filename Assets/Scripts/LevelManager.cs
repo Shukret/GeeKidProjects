@@ -124,7 +124,7 @@ public class LevelManager : MonoBehaviour
     private IEnumerator WaitVictory(float time)
     {
         yield return new WaitForSeconds(time);
-
+        Handheld.Vibrate();
         messagePanel.SetActive(true);
         textMessage.text = messages[useLevelNumber - 1];
         useLevelNumber++;

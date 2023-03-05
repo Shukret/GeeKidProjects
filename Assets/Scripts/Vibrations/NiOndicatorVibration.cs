@@ -7,7 +7,7 @@ public class NiOndicatorVibration : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Handheld.Vibrate();
     }
 
     // Update is called once per frame
