@@ -1,0 +1,129 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\GameDev\\build\\Brain\\Brain\\Temp\\gradleOut\\launcher\\build\\intermediates\\res\\merged\\release\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\GameDev\\build\\Brain\\Brain\\Temp\\gradleOut\\launcher\\src\\main\\res\\values\\ids.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "46",
+                        "endOffsets": "97"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                },
+                {
+                    "source": "D:\\GameDev\\build\\Brain\\Brain\\Temp\\gradleOut\\launcher\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "5,2,7",
+                        "startColumns": "0,0,0",
+                        "startOffsets": "190,53,288",
+                        "endLines": "6,4,10",
+                        "endColumns": "8,8,8",
+                        "endOffsets": "286,188,513"
+                    },
+                    "to": {
+                        "startLines": "5,15,18",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "212,787,925",
+                        "endLines": "6,17,21",
+                        "endColumns": "8,8,8",
+                        "endOffsets": "307,920,1147"
+                    }
+                },
+                {
+                    "source": "D:\\GameDev\\build\\Brain\\Brain\\Temp\\gradleOut\\launcher\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "2,2",
+                        "startOffsets": "55,97",
+                        "endColumns": "40,65",
+                        "endOffsets": "93,160"
+                    },
+                    "to": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "101,144",
+                        "endColumns": "42,67",
+                        "endOffsets": "139,207"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Yanovichev\\.gradle\\caches\\transforms-2\\files-2.1\\e60496bac5c3ee25ceef3a5dd50abf40\\NativeShare\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "525"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "312",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "782"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\GameDev\\build\\Brain\\Brain\\Temp\\gradleOut\\launcher\\build\\intermediates\\res\\merged\\release\\values-v21_values-v21.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\GameDev\\build\\Brain\\Brain\\Temp\\gradleOut\\launcher\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "0",
+                        "startOffsets": "53",
+                        "endLines": "3",
+                        "endColumns": "8",
+                        "endOffsets": "153"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "3",
+                        "endColumns": "8",
+                        "endOffsets": "154"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\GameDev\\build\\Brain\\Brain\\Temp\\gradleOut\\launcher\\build\\intermediates\\res\\merged\\release\\values-v28_values-v28.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\GameDev\\build\\Brain\\Brain\\Temp\\gradleOut\\launcher\\src\\main\\res\\values-v28\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "0",
+                        "startOffsets": "53",
+                        "endLines": "4",
+                        "endColumns": "8",
+                        "endOffsets": "229"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "8",
+                        "endOffsets": "229"
+                    }
+                }
+            ]
+        }
+    ]
+}
