@@ -22,7 +22,6 @@ public class DestroyButton : MonoBehaviour
             levelManager.Victory();
             levelManager.useVictoryTry();
             Instantiate(yesIndicator, target.transform);
-            Destroy(gameObject);
             
 
         }

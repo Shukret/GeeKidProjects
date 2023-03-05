@@ -529,8 +529,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -150, y: -207.00003}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -182.47787, y: -172.97}
+  m_SizeDelta: {x: 147.0443, y: 144.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3090084832835348126
 CanvasRenderer:
@@ -614,7 +614,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3090084833145481203}
+      - m_Target: {fileID: 844858331402156951}
         m_TargetAssemblyTypeName: InputNumber, Assembly-CSharp
         m_MethodName: InputNumbers
         m_Mode: 5
@@ -769,7 +769,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3090084833145481202}
-  - component: {fileID: 3090084833145481203}
   m_Layer: 5
   m_Name: Level_1
   m_TagString: Untagged
@@ -817,33 +816,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -343}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3090084833145481203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3090084833145481201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa6eff390e3cf3c4da795910aa53a76a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonsNumbers:
-  - {fileID: 3090084834529822820}
-  - {fileID: 3090084834664366187}
-  - {fileID: 3090084834431208239}
-  - {fileID: 3090084833239851880}
-  - {fileID: 3090084833822663576}
-  - {fileID: 3090084833383752211}
-  - {fileID: 3090084832835348122}
-  - {fileID: 3090084834429988710}
-  - {fileID: 3090084833548712790}
-  - {fileID: 3090084834629671468}
-  textInput: {fileID: 3090084834427008136}
-  trueNumber: 8
-  yesIndicator: {fileID: 5300463219823682520, guid: a99d667120c27b44ea3893ea3238d78d, type: 3}
-  noIndicator: {fileID: 7913188868884072642, guid: 1d88c33dfd677f54290837dcd59f1f79, type: 3}
 --- !u!1 &3090084833239851880
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,8 +852,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 150, y: -57.00003}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 186.4412, y: 14.794}
+  m_SizeDelta: {x: 144.8824, y: 137.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3090084833239851884
 CanvasRenderer:
@@ -965,7 +937,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3090084833145481203}
+      - m_Target: {fileID: 844858331402156951}
         m_TargetAssemblyTypeName: InputNumber, Assembly-CSharp
         m_MethodName: InputNumbers
         m_Mode: 5
@@ -1147,8 +1119,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -300, y: -207.00003}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -369.79413, y: -172.96863}
+  m_SizeDelta: {x: 143.3783, y: 144.8823}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3090084833383752215
 CanvasRenderer:
@@ -1232,7 +1204,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3090084833145481203}
+      - m_Target: {fileID: 844858331402156951}
         m_TargetAssemblyTypeName: InputNumber, Assembly-CSharp
         m_MethodName: InputNumbers
         m_Mode: 5
@@ -1280,8 +1252,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 150, y: -207.00003}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 186.44, y: -172.97}
+  m_SizeDelta: {x: 144.88, y: 144.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3090084833548712746
 CanvasRenderer:
@@ -1365,7 +1337,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3090084833145481203}
+      - m_Target: {fileID: 844858331402156951}
         m_TargetAssemblyTypeName: InputNumber, Assembly-CSharp
         m_MethodName: InputNumbers
         m_Mode: 5
@@ -1522,6 +1494,7 @@ GameObject:
   - component: {fileID: 3090084833726876501}
   - component: {fileID: 3090084833726876503}
   - component: {fileID: 3090084833726876502}
+  - component: {fileID: 844858331402156951}
   m_Layer: 5
   m_Name: Value
   m_TagString: Untagged
@@ -1546,8 +1519,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 108.99997}
-  m_SizeDelta: {x: 400, y: 100}
+  m_AnchoredPosition: {x: -3.7209, y: 208}
+  m_SizeDelta: {x: 482.2842, y: 132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3090084833726876503
 CanvasRenderer:
@@ -1587,6 +1560,33 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &844858331402156951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090084833726876500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa6eff390e3cf3c4da795910aa53a76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonsNumbers:
+  - {fileID: 3090084834529822820}
+  - {fileID: 3090084834664366187}
+  - {fileID: 3090084834431208239}
+  - {fileID: 3090084833239851880}
+  - {fileID: 3090084833822663576}
+  - {fileID: 3090084833383752211}
+  - {fileID: 3090084832835348122}
+  - {fileID: 3090084834429988710}
+  - {fileID: 3090084833548712790}
+  - {fileID: 3090084834629671468}
+  textInput: {fileID: 3090084834427008136}
+  trueNumber: 8
+  yesIndicator: {fileID: 5300463219823682520, guid: a99d667120c27b44ea3893ea3238d78d, type: 3}
+  noIndicator: {fileID: 7913188868884072642, guid: 1d88c33dfd677f54290837dcd59f1f79, type: 3}
 --- !u!1 &3090084833822663576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,8 +1623,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 300, y: -57.00003}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 369.2128, y: 14.793}
+  m_SizeDelta: {x: 146.3784, y: 137.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3090084833822663580
 CanvasRenderer:
@@ -1708,7 +1708,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3090084833145481203}
+      - m_Target: {fileID: 844858331402156951}
         m_TargetAssemblyTypeName: InputNumber, Assembly-CSharp
         m_MethodName: InputNumbers
         m_Mode: 5
@@ -1889,7 +1889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 312, y: 133.99997}
+  m_AnchoredPosition: {x: 361, y: 217}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3090084834149607132
@@ -1974,7 +1974,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3090084833145481203}
+      - m_Target: {fileID: 844858331402156951}
         m_TargetAssemblyTypeName: InputNumber, Assembly-CSharp
         m_MethodName: Input
         m_Mode: 1
@@ -2021,7 +2021,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -315, y: 134}
+  m_AnchoredPosition: {x: -360, y: 217}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3090084834177207247
@@ -2106,7 +2106,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3090084833145481203}
+      - m_Target: {fileID: 844858331402156951}
         m_TargetAssemblyTypeName: InputNumber, Assembly-CSharp
         m_MethodName: Delete
         m_Mode: 1
@@ -2556,8 +2556,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -207.00003}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 4.6931, y: -172.97}
+  m_SizeDelta: {x: 143.3862, y: 144.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3090084834429988730
 CanvasRenderer:
@@ -2641,7 +2641,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3090084833145481203}
+      - m_Target: {fileID: 844858331402156951}
         m_TargetAssemblyTypeName: InputNumber, Assembly-CSharp
         m_MethodName: InputNumbers
         m_Mode: 5
@@ -2689,8 +2689,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -57.00003}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -1.3069, y: 14.794}
+  m_SizeDelta: {x: 143.3862, y: 137.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3090084834431208227
 CanvasRenderer:
@@ -2774,7 +2774,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3090084833145481203}
+      - m_Target: {fileID: 844858331402156951}
         m_TargetAssemblyTypeName: InputNumber, Assembly-CSharp
         m_MethodName: InputNumbers
         m_Mode: 5
@@ -2822,8 +2822,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -300, y: -57.00003}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -373.5431, y: 14.795}
+  m_SizeDelta: {x: 150.8666, y: 137.4019}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3090084834529822840
 CanvasRenderer:
@@ -2907,7 +2907,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3090084833145481203}
+      - m_Target: {fileID: 844858331402156951}
         m_TargetAssemblyTypeName: InputNumber, Assembly-CSharp
         m_MethodName: InputNumbers
         m_Mode: 5
@@ -2955,8 +2955,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 300, y: -207.00003}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 372.20782, y: -172.97}
+  m_SizeDelta: {x: 140.3844, y: 144.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3090084834629671456
 CanvasRenderer:
@@ -3040,7 +3040,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3090084833145481203}
+      - m_Target: {fileID: 844858331402156951}
         m_TargetAssemblyTypeName: InputNumber, Assembly-CSharp
         m_MethodName: InputNumbers
         m_Mode: 5
@@ -3356,8 +3356,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -150, y: -57}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -188.97, y: 14.795}
+  m_SizeDelta: {x: 148.06, y: 137.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3090084834664366191
 CanvasRenderer:
@@ -3441,7 +3441,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3090084833145481203}
+      - m_Target: {fileID: 844858331402156951}
         m_TargetAssemblyTypeName: InputNumber, Assembly-CSharp
         m_MethodName: InputNumbers
         m_Mode: 5

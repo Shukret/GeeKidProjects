@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6233348734610935058}
   - component: {fileID: 5856960219126867745}
   - component: {fileID: 3876524986334553094}
+  - component: {fileID: 5893180289412460839}
   m_Layer: 5
   m_Name: NoIndicator
   m_TagString: Untagged
@@ -103,3 +104,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeScaler: 0.5
+--- !u!114 &5893180289412460839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7913188868884072642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cabc82eadee6740b69efe0349191bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

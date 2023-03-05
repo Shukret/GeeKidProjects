@@ -5,6 +5,7 @@ using UnityEngine;
 public class Wait : MonoBehaviour
 {
     private LevelManager levelManager;
+    [SerializeField] private DragDrop[] dragDrops;
     [SerializeField] private float waitForSeconds;
     [SerializeField] private GameObject yesIndicator, target;
     private float time;
@@ -14,6 +15,11 @@ public class Wait : MonoBehaviour
     {
         levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
         levelManager.NotifyClick += ZeroTime;
+        foreach (DragDrop dragDrop in dragDrops)
+        {
+            dragDrop.NotifyDrag += ZeroTime;
+        }
+        
     }
 
     // Update is called once per frame

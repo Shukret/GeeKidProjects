@@ -87,7 +87,10 @@ public class LeaderboardShowcase : MonoBehaviour
         for (int i = 0; i < entries.Length; i++)
         {
             if (i == maxLeader) return;
-            leaderObj[i].GetComponentsInChildren<TMP_Text>()[0].text = $"{i + 1}. {entries[i].Username}";
+            if (entries[i].Username == saveManager.userName)
+                leaderObj[i].GetComponentsInChildren<TMP_Text>()[0].text = $"{i + 1}. Вы";
+            else
+                leaderObj[i].GetComponentsInChildren<TMP_Text>()[0].text = $"{i + 1}. {entries[i].Username}";
             leaderObj[i].GetComponentsInChildren<TMP_Text>()[1].text = $"{entries[i].Score}";
         }
         for (int i = 0; i < entries.Length; i++)

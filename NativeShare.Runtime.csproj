@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{91114E37-FECF-DE58-9332-3BEA97A10954}</ProjectGuid>
+    <ProjectGuid>{C5551585-4243-1F20-3B10-545AB8D5E32C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>NativeShare.Runtime</AssemblyName>

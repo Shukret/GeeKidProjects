@@ -1,4 +1,0 @@
-#Sun Mar 05 11:22:42 MSK 2023
-base.0=D\:\\GameDev\\build\\Brain\\Brain\\Temp\\gradleOut\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

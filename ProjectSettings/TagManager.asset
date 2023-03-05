@@ -11,6 +11,7 @@ TagManager:
   - Object
   - Target
   - TargetLevel_16
+  - AudioManager
   layers:
   - Default
   - TransparentFX

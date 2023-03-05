@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{12D05D53-7759-234B-5954-6ABA49CAE3AB}</ProjectGuid>
+    <ProjectGuid>{BC0F1285-D56B-AD74-CB79-6432601380A7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -734,15 +734,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="NativeShare.Runtime.csproj">
-      <Project>{91114E37-FECF-DE58-9332-3BEA97A10954}</Project>
+      <Project>{C5551585-4243-1F20-3B10-545AB8D5E32C}</Project>
       <Name>NativeShare.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Dan.csproj">
-      <Project>{71774D61-B305-3453-8F3C-135E0386679F}</Project>
+      <Project>{7F441DEF-CC4F-A7A0-D789-34334E4D8241}</Project>
       <Name>Dan</Name>
     </ProjectReference>
     <ProjectReference Include="NativeShare.Editor.csproj">
-      <Project>{30A35E48-B520-48CE-96A8-5DDA67536F7E}</Project>
+      <Project>{4B2EF8D0-0794-7F28-43F9-BB9C79BFD54C}</Project>
       <Name>NativeShare.Editor</Name>
     </ProjectReference>
   </ItemGroup>

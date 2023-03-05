@@ -5,6 +5,8 @@ using UnityEngine.EventSystems;
 
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
+    public delegate void DragHandler();
+    public event DragHandler NotifyDrag;
     [SerializeField] private Canvas canvas;
     [SerializeField] public bool isTrue;
     public ItemSlot itemslot;
@@ -20,6 +22,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
+        NotifyDrag?.Invoke();
         canvasGroup.blocksRaycasts = false;
         if (itemslot != null)
         {
@@ -30,11 +33,13 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     public void OnDrag(PointerEventData eventData)
     {
         rectTransform.anchoredPosition += eventData.delta/canvas.scaleFactor;
+        NotifyDrag?.Invoke();
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = true;
+        NotifyDrag?.Invoke();
     }
 
     public void OnPointerDown(PointerEventData eventData)

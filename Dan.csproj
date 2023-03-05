@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>Dan</RootNamespace>
-    <ProjectGuid>{71774D61-B305-3453-8F3C-135E0386679F}</ProjectGuid>
+    <ProjectGuid>{7F441DEF-CC4F-A7A0-D789-34334E4D8241}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Dan</AssemblyName>

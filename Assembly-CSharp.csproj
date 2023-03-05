@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AA6C03D1-A9C9-7C2F-C379-8CF066720AF5}</ProjectGuid>
+    <ProjectGuid>{7579DA37-DA40-539D-1120-F4553CFFAB4B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\InputNumber.cs" />
     <Compile Include="Assets\Scripts\SaveManager.cs" />
     <Compile Include="Assets\Scripts\ButtonCkick.cs" />
+    <Compile Include="Assets\Scripts\Marks\Mark_RatingLeader.cs" />
     <Compile Include="Assets\Scripts\Wait.cs" />
     <Compile Include="Assets\Scripts\AnimationsScripts\AnimationMessagePanel.cs" />
     <Compile Include="Assets\Scripts\ScriptsForLevels\Level_3\DeleteTarget.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\Scripts\ScriptsForLevels\Level_5\DawnApple.cs" />
     <Compile Include="Assets\Scripts\Marks\Lock.cs" />
     <Compile Include="Assets\Scripts\ItemSlot.cs" />
+    <Compile Include="Assets\Scripts\AnimationsScripts\AnimationsIndicator.cs" />
     <Compile Include="Assets\Scripts\ScriptsForLevels\Level_17\DestroyButton.cs" />
     <Compile Include="Assets\Scripts\TriggerVictory.cs" />
     <Compile Include="Assets\Scripts\DeleteCollider.cs" />
@@ -85,8 +87,10 @@
     <Compile Include="Assets\Scripts\Events\EventOnEnableSettings.cs" />
     <Compile Include="Assets\Scripts\Zoom_tuch.cs" />
     <Compile Include="Assets\Scripts\AccelerationController.cs" />
-    <Compile Include="Assets\Scripts\Marks\Mark_RatingLeader.cs" />
-    <Compile Include="Assets\Scripts\AnimationsScripts\AnimationsIndicator.cs" />
+    <Compile Include="Assets\Scripts\ScriptsForLevels\Level_20\ToSettingsPositions.cs" />
+    <Compile Include="Assets\Scripts\AudioScripts\YesIndicatorAudio.cs" />
+    <Compile Include="Assets\Scripts\AudioScripts\NoIndicatorAudio.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -775,19 +779,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{12D05D53-7759-234B-5954-6ABA49CAE3AB}</Project>
+      <Project>{BC0F1285-D56B-AD74-CB79-6432601380A7}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="NativeShare.Runtime.csproj">
-      <Project>{91114E37-FECF-DE58-9332-3BEA97A10954}</Project>
+      <Project>{C5551585-4243-1F20-3B10-545AB8D5E32C}</Project>
       <Name>NativeShare.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Dan.csproj">
-      <Project>{71774D61-B305-3453-8F3C-135E0386679F}</Project>
+      <Project>{7F441DEF-CC4F-A7A0-D789-34334E4D8241}</Project>
       <Name>Dan</Name>
     </ProjectReference>
     <ProjectReference Include="NativeShare.Editor.csproj">
-      <Project>{30A35E48-B520-48CE-96A8-5DDA67536F7E}</Project>
+      <Project>{4B2EF8D0-0794-7F28-43F9-BB9C79BFD54C}</Project>
       <Name>NativeShare.Editor</Name>
     </ProjectReference>
   </ItemGroup>

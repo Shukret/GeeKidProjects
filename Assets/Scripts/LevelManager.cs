@@ -23,6 +23,7 @@ public class LevelManager : MonoBehaviour
     
     private GameObject useLevel;
     private int useLevelNumber;
+    private AudioSource audioVictory;
 
     private Button[] buttonsComponents;
     private Star[] starsComponents;
@@ -105,10 +106,12 @@ public class LevelManager : MonoBehaviour
     public void Victory()
     {
         StartCoroutine(WaitVictory(1f));
+        audioVictory.Play();
     }
     public void NextLevel()
     {
         Destroy(useLevel);
+        audioVictory.Stop();
         if (maxLevel < useLevelNumber)
             ToSelectLevels();
         else
@@ -135,7 +138,7 @@ public class LevelManager : MonoBehaviour
     }
     public void Awake()
     {
-
+        audioVictory = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().audioVictory;
         if (saveManager.lastLevel > maxLevel) ToSelectLevels();
         else
         {

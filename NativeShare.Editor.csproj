@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{30A35E48-B520-48CE-96A8-5DDA67536F7E}</ProjectGuid>
+    <ProjectGuid>{4B2EF8D0-0794-7F28-43F9-BB9C79BFD54C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>NativeShare.Editor</AssemblyName>

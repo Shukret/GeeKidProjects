@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - AccelerationController
     - AnimationMessagePanel
     - AnimationsIndicator
+    - AudioManager
     - Block
     - ButtonCkick
     - DawnApple
@@ -21,18 +22,22 @@ ScriptsOnlyBuild:
     - Lock
     - Mark_Level_20
     - Mark_RatingLeader
+    - NoIndicatorAudio
     - SaveManager
     - SettingsManager
     - ShareImage
     - Star
     - TimeLife
+    - ToSettingsPositions
     - Wait
+    - YesIndicatorAudio
     DOTween.dll:
     - DG.Tweening.Core.DOTweenSettings
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -98,6 +103,10 @@ ScriptsOnlyBuild:
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -191,6 +200,14 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5668}
     - Class: 114
       Script: {instanceID: 5742}
+    - Class: 114
+      Script: {instanceID: 94178}
+    - Class: 114
+      Script: {instanceID: 117606}
+    - Class: 114
+      Script: {instanceID: 117612}
+    - Class: 114
+      Script: {instanceID: 117620}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -576,7 +593,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: 3bbf8a70d58700363208d467a7a13f02
+      Hash: 5de734daebf2f5040ff113369a39ae59
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Wait
@@ -952,6 +969,30 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AccelerationController
+  - hash:
+      serializedVersion: 2
+      Hash: cbdaf6289eb255feedd0bee0a753faee
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ToSettingsPositions
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: YesIndicatorAudio
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NoIndicatorAudio
+  - hash:
+      serializedVersion: 2
+      Hash: 491675b30eee230ac94aa5757e386066
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
