@@ -9,6 +9,7 @@ public class DestroyButton : MonoBehaviour
     [SerializeField] private float timeDown;
     [SerializeField] private GameObject yesIndicator, noIndicator, target;
     private float time;
+    private bool isVictory;
 
     private void Awake()
     {
@@ -17,12 +18,12 @@ public class DestroyButton : MonoBehaviour
     public void ButtonDown()
     {
         count++;
-        if (count >=5)
+        if (count >=5 && !isVictory)
         {
             levelManager.Victory();
             levelManager.useVictoryTry();
             Instantiate(yesIndicator, target.transform);
-            
+            isVictory = true;
 
         }
     }

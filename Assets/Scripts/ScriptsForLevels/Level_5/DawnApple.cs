@@ -15,6 +15,6 @@ public class DawnApple : MonoBehaviour
     private void Down()
     {
         rb.bodyType = RigidbodyType2D.Dynamic;
-        rb.gravityScale = 10;
+        rb.gravityScale = 20;
     }
 }

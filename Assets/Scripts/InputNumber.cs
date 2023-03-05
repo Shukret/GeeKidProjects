@@ -18,6 +18,7 @@ public class InputNumber : MonoBehaviour
         levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
         for (int i = 0; i < buttonsNumbers.Length; i++)
         {
+            buttonsNumbers[i].GetComponentInChildren<TMP_Text>().fontSize = 100;
             buttonsNumbers[i].GetComponentInChildren<TMP_Text>().text = i.ToString();
         }
 

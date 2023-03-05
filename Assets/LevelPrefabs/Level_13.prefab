@@ -65,13 +65,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '3+2=71
+  m_text: '3 + 2 = 71
 
-    2+3=17
+    2 + 3 = 17
 
-    5+10=351
+    5 + 10 = 351
 
-    10+5=?'
+    10 + 5 = ?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f522c5280bd49e64c8b2a0b7259a229e, type: 2}
   m_sharedMaterial: {fileID: -4699486618095212129, guid: f522c5280bd49e64c8b2a0b7259a229e, type: 2}
