@@ -31,7 +31,8 @@ public class InputNumber : MonoBehaviour
     }
     public void InputNumbers(string numbers)
     {
-        textInput.text += numbers;
+        if (textInput.text.Length < 6)
+            textInput.text += numbers;
     }
     public void Input()
     {

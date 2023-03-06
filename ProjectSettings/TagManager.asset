@@ -12,6 +12,7 @@ TagManager:
   - Target
   - TargetLevel_16
   - AudioManager
+  - SaveManager
   layers:
   - Default
   - TransparentFX

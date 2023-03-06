@@ -18,6 +18,5 @@ public class DragColor : MonoBehaviour
         Image image = itemSlot.GetComponent<Image>();
         image.sprite = sprite;
         GetComponent<Image>().sprite = sprite;
-        Destroy(gameObject);
     }
 }

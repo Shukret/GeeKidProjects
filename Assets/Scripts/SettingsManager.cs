@@ -15,23 +15,27 @@ public class SettingsManager : MonoBehaviour
     [SerializeField] private TMP_InputField inputUserName;
     [SerializeField] private GameObject errorUserName;
     [SerializeField] private LeaderboardShowcase leaderboardShowcase;
+    [SerializeField] private AudioManager audioManager;
 
     private LevelManager levelManager;
     private bool isAudioOn, isVibrationOn, isMusicOn;
+
+    public string[] usersName;
 
     private void Awake()
     {
         levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
         settingsPanelEvent.NotifyEnable += LoadSwitch;
         settingsPanelEvent.NotifyEnable += ShowButtonAudioAndVibrationAndMusic;
-
+        
     }
+
 
     public void LoadSwitch()
     {
-        isAudioOn = saveManager.isAudioOn;
+        isAudioOn = saveManager.IsAudioOn;
         isVibrationOn = saveManager.isVibrationOn;
-        isMusicOn = saveManager.isMusicOn;       
+        isMusicOn = saveManager.IsMusicOn;       
     }
     public void ShowButtonAudioAndVibrationAndMusic()
     {
@@ -80,7 +84,7 @@ public class SettingsManager : MonoBehaviour
             isAudioOn = !isAudioOn;
             audioImage.sprite = audioOn;
         }
-        saveManager.isAudioOn = isAudioOn;
+        saveManager.IsAudioOn = isAudioOn;
     }
     public void SwitchVibration()
     {
@@ -105,14 +109,16 @@ public class SettingsManager : MonoBehaviour
             //выключаем музыку
             isMusicOn = !isMusicOn;
             musicImage.sprite = musicOff;
+            audioManager.music.volume = 0;
         }
         else
         {
             //включаем музыку
             isMusicOn = !isMusicOn;
             musicImage.sprite = musicOn;
+            audioManager.music.volume = 1;
         }
-        saveManager.isMusicOn = isMusicOn;
+        saveManager.IsMusicOn = isMusicOn;
     }
     public void Repost()
     {
@@ -125,7 +131,8 @@ public class SettingsManager : MonoBehaviour
     }
     public void Rating()
     {
-        if (saveManager.userName == "" || saveManager.userName == null)
+        leaderboardShowcase.LoadUsersName();
+        if (saveManager.UserName == "" || saveManager.UserName == null)
         {
             levelManager.OffAllPanel();
             inputUserNamePanel.SetActive(true);
@@ -149,24 +156,31 @@ public class SettingsManager : MonoBehaviour
     }
     public void InputUserName()
     {
-        saveManager.userName = inputUserName.text;
-        leaderboardShowcase.CheckUserName();
-        if (saveManager.userName == "DoubleName")
+        if (CheckUserName(inputUserName.text))
         {
             StartCoroutine(ShowErrorUserName(3, "Такое имя уже существует!"));
             
         }
-        else if (saveManager.userName == "" || saveManager.userName == null)
+        else if (inputUserName.text == "" || inputUserName.text == null)
         {
             StartCoroutine(ShowErrorUserName(3, "Вы не ввели имя!"));
         }
         else
         {
+            saveManager.UserName = inputUserName.text;
             levelManager.OffAllPanel();
             ratingPanel.SetActive(true);
             leaderboardShowcase.Submit();
         }
         
+    }
+    private bool CheckUserName(string name)
+    {
+        for( int i = 0; i < usersName.Length; i++)
+        {
+            if (usersName[i] == name) return true;
+        }
+        return false;
     }
     public void EnglishLanguage()
     {

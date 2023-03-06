@@ -41,24 +41,24 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            if (saveManager.isClueOpen[useLevelNumber - 1])
+            if (saveManager.GetIsClueOpen(useLevelNumber - 1))
             {
                 cluePanel.SetActive(true);
                 clueTextPlace.text = clueText[useLevelNumber - 1];
             }
             else
             {
-                if (saveManager.ideas < removeIdeas)
+                if (saveManager.Ideas < removeIdeas)
                 {
                     //Предлагаем купить идеи
                 }
                 else
                 {
-                    saveManager.ideas -= removeIdeas;
+                    saveManager.Ideas -= removeIdeas;
                     UpdateIdeas();
                     cluePanel.SetActive(true);
                     clueTextPlace.text = clueText[useLevelNumber - 1];
-                    saveManager.isClueOpen[useLevelNumber - 1] = true;
+                    saveManager.SetIsClueOpen(true, useLevelNumber - 1);
                 }
             }
         }
@@ -67,31 +67,31 @@ public class LevelManager : MonoBehaviour
     public void addIdeas(int countIdeas)
     {
         NotifyClick?.Invoke();
-        saveManager.ideas += countIdeas;
+        saveManager.Ideas += countIdeas;
         UpdateIdeas();
     }
     public void SkipLevel(int removeIdeas)
     {
         NotifyClick?.Invoke();
-        if (saveManager.ideas < removeIdeas)
+        if (saveManager.Ideas < removeIdeas)
         {
             //Предлагаем купить
         }
         else
         {
-            if (saveManager.lastLevel == useLevelNumber)
+            if (saveManager.LastLevel == useLevelNumber)
             {
-                saveManager.ideas -= removeIdeas;
+                saveManager.Ideas -= removeIdeas;
                 Victory();
                 UpdateIdeas();
-                saveManager.countTry[useLevelNumber - 1] = maxCountTry;
+                saveManager.SetCountTry(maxCountTry, useLevelNumber - 1);
             }
             
         }    
     }
     public void UpdateIdeas()
     {
-        ideasCounter.text = saveManager.ideas.ToString();
+        ideasCounter.text = saveManager.Ideas.ToString();
     }
     public void OffAllPanel()
     {
@@ -106,7 +106,7 @@ public class LevelManager : MonoBehaviour
     public void Victory()
     {
         StartCoroutine(WaitVictory(1f));
-        audioVictory.Play();
+        if (saveManager.IsAudioOn) audioVictory.Play();
     }
     public void NextLevel()
     {
@@ -124,11 +124,11 @@ public class LevelManager : MonoBehaviour
     private IEnumerator WaitVictory(float time)
     {
         yield return new WaitForSeconds(time);
-        Handheld.Vibrate();
+        if (saveManager.isVibrationOn) Handheld.Vibrate();
         messagePanel.SetActive(true);
         textMessage.text = messages[useLevelNumber - 1];
         useLevelNumber++;
-        if(useLevelNumber > saveManager.lastLevel) saveManager.lastLevel++;     
+        if(useLevelNumber > saveManager.LastLevel) saveManager.LastLevel++;     
         buttonNext.onClick.RemoveAllListeners();
         buttonNext.onClick.AddListener(NextLevel);
     }
@@ -139,13 +139,15 @@ public class LevelManager : MonoBehaviour
     public void Awake()
     {
         audioVictory = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().audioVictory;
-        if (saveManager.lastLevel > maxLevel) ToSelectLevels();
+    }
+    public void StartGame()
+    {
+        if (saveManager.LastLevel > maxLevel) ToSelectLevels();
         else
         {
             OffAllPanel();
-            Spawn(saveManager.lastLevel);
+            Spawn(saveManager.LastLevel);
         }
-
     }
     private void ShowSelectLevels()
     {
@@ -180,18 +182,18 @@ public class LevelManager : MonoBehaviour
                 indexer = 1;
             }
                 
-            if (i + 1 < saveManager.lastLevel)
+            if (i + 1 < saveManager.LastLevel)
             {
                 blocksComponents[i].gameObject.SetActive(false);
                 locksComponents[i].gameObject.SetActive(false);
             }
-            if (i + 1 == saveManager.lastLevel)
+            if (i + 1 == saveManager.LastLevel)
             {
                 blocksComponents[i].gameObject.SetActive(false);
                 locksComponents[i].gameObject.SetActive(false);
                 starsComponents[i].gameObject.SetActive(false);
             }
-            if (i + 1 > saveManager.lastLevel)
+            if (i + 1 > saveManager.LastLevel)
             {
                 starsComponents[i].gameObject.SetActive(false);
             }
@@ -227,8 +229,8 @@ public class LevelManager : MonoBehaviour
         CloseSelectLevels();
         if (useLevel == null)//Если у нас панель уровня пуста
         {
-            if (saveManager.lastLevel > maxLevel) Spawn(maxLevel);
-            else Spawn(saveManager.lastLevel);
+            if (saveManager.LastLevel > maxLevel) Spawn(maxLevel);
+            else Spawn(saveManager.LastLevel);
         }
         else
         {
@@ -257,17 +259,17 @@ public class LevelManager : MonoBehaviour
     }
     public void useTry()
     {
-        if (saveManager.countTry[useLevelNumber - 1] < maxCountTry)
+        if (saveManager.GetCountTry(useLevelNumber - 1) < maxCountTry)
         {
-            saveManager.countTry[useLevelNumber - 1]++;     
+            saveManager.CountryTryIncrement(useLevelNumber - 1);
         }
     }
     public void useVictoryTry()
     {
-        if (saveManager.countTry[useLevelNumber - 1] < maxCountTry)
+        if (saveManager.GetCountTry(useLevelNumber - 1) < maxCountTry)
         {
             LeaderboardShowcase.AddPlayerScore();
-            saveManager.countTry[useLevelNumber - 1] = maxCountTry;
+            saveManager.SetCountTry(maxCountTry, useLevelNumber - 1);
         }
     }
 }

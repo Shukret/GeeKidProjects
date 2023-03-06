@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class NiOndicatorVibration : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private SaveManager saveManager;
+    void Awake()
     {
-        Handheld.Vibrate();
+        saveManager = GameObject.FindGameObjectWithTag("SaveManager").GetComponent<SaveManager>();
+        if (saveManager.isVibrationOn)
+            Handheld.Vibrate();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

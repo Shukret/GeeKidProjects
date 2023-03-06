@@ -5,11 +5,16 @@ using UnityEngine;
 public class Remove : MonoBehaviour
 {
     [SerializeField] private ItemSlot itemSlot;
+    [SerializeField] private bool isRemove;
     // Start is called before the first frame update
     void Awake()
     {
-        itemSlot = GetComponent<ItemSlot>();
-        itemSlot.Notify += RemoveMethod;
+        if (isRemove)
+        {
+            itemSlot = GetComponent<ItemSlot>();
+            itemSlot.Notify += RemoveMethod;
+        }
+        
     }
 
     private void RemoveMethod()

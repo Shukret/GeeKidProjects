@@ -139,6 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemSlot: {fileID: 4690400441213476270}
   sprite: {fileID: 491935091428326132, guid: 65a0db51b40c170418c31a513c4da426, type: 3}
+  isRemove: 0
 --- !u!114 &5720794518376899019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +211,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be1587eaec034364e912282e9b0eee12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemSlot: {fileID: 0}
+  isRemove: 1
 --- !u!1 &3655138546164354256
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,6 +268,7 @@ GameObject:
   - component: {fileID: 20723956}
   - component: {fileID: 2127355156327439430}
   - component: {fileID: 2463690927831699929}
+  - component: {fileID: 7379411560097132317}
   m_Layer: 5
   m_Name: Target
   m_TagString: Untagged
@@ -386,6 +390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemSlot: {fileID: 2132892080}
   sprite: {fileID: 491935091428326132, guid: 65a0db51b40c170418c31a513c4da426, type: 3}
+  isRemove: 0
 --- !u!114 &2127355156327439430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,6 +450,20 @@ MonoBehaviour:
   isVictory: 0
   yesIndicator: {fileID: 5300463219823682520, guid: a99d667120c27b44ea3893ea3238d78d, type: 3}
   noIndicator: {fileID: 7913188868884072642, guid: 1d88c33dfd677f54290837dcd59f1f79, type: 3}
+--- !u!114 &7379411560097132317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4690400441213476266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1587eaec034364e912282e9b0eee12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemSlot: {fileID: 0}
+  isRemove: 1
 --- !u!1 &6387955720316548189
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,6 +479,7 @@ GameObject:
   - component: {fileID: 6158148701323882394}
   - component: {fileID: 5651390093354545255}
   - component: {fileID: 4148644102426043768}
+  - component: {fileID: 7004717617971380235}
   m_Layer: 5
   m_Name: Object (2)
   m_TagString: Untagged
@@ -610,3 +630,17 @@ MonoBehaviour:
   isVictory: 0
   yesIndicator: {fileID: 5300463219823682520, guid: a99d667120c27b44ea3893ea3238d78d, type: 3}
   noIndicator: {fileID: 7913188868884072642, guid: 1d88c33dfd677f54290837dcd59f1f79, type: 3}
+--- !u!114 &7004717617971380235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6387955720316548189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1587eaec034364e912282e9b0eee12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemSlot: {fileID: 0}
+  isRemove: 0

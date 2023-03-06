@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioSource audioYesIndicator, audioNoIndicator, audioVictory;
+    public AudioSource audioYesIndicator, audioNoIndicator, audioVictory, music;
 }

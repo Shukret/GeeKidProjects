@@ -14,6 +14,7 @@ public class LeaderboardShowcase : MonoBehaviour
     [SerializeField] private int maxLeader;
     [SerializeField] private SaveManager saveManager;
     [SerializeField] private Sprite[] sprites;
+    [SerializeField] private SettingsManager settingsManager;
 
     private int _playerScore;
     void Start()
@@ -50,24 +51,21 @@ public class LeaderboardShowcase : MonoBehaviour
     }
     private void ShowScore()
     {
-        _playerScoreText.text = "Твой счет: " + saveManager.score;
+        _playerScoreText.text = "Твой счет: " + saveManager.Score;
     }
     public void AddPlayerScore()
     {
-        saveManager.score++;
-        _playerScoreText.text = "Твой счет: " + saveManager.score;
+        saveManager.Score++;
+        _playerScoreText.text = "Твой счет: " + saveManager.Score;
     }
     public void Load() => LeaderboardCreator.GetLeaderboard(_leaderboardPublicKey, OnLeaderboardLoaded);
-    public void CheckUserName() => LeaderboardCreator.GetLeaderboard(_leaderboardPublicKey, OnUserNameLoaded);
-    private void OnUserNameLoaded(Entry[] entries) 
+    public void LoadUsersName() => LeaderboardCreator.GetLeaderboard(_leaderboardPublicKey, LoadUsersNames);
+    private void LoadUsersNames(Entry[] entries) 
     {
+        settingsManager.usersName = new string[entries.Length];
         for (int i = 0; i < entries.Length; i++)
         {
-            if (saveManager.userName == entries[i].Username)
-            {
-                saveManager.userName = "DoubleName";
-                return;
-            }
+            settingsManager.usersName[i] = entries[i].Username;
         }
     }
     private void OnLeaderboardLoaded(Entry[] entries)
@@ -87,7 +85,7 @@ public class LeaderboardShowcase : MonoBehaviour
         for (int i = 0; i < entries.Length; i++)
         {
             if (i == maxLeader) return;
-            if (entries[i].Username == saveManager.userName)
+            if (entries[i].Username == saveManager.UserName)
                 leaderObj[i].GetComponentsInChildren<TMP_Text>()[0].text = $"{i + 1}. Вы";
             else
                 leaderObj[i].GetComponentsInChildren<TMP_Text>()[0].text = $"{i + 1}. {entries[i].Username}";
@@ -101,7 +99,7 @@ public class LeaderboardShowcase : MonoBehaviour
     public void Submit()
     {
 
-        LeaderboardCreator.UploadNewEntry(_leaderboardPublicKey, saveManager.userName, saveManager.score, OnUploadComplete);
+        LeaderboardCreator.UploadNewEntry(_leaderboardPublicKey, saveManager.UserName, saveManager.Score, OnUploadComplete);
 
     }
     private void OnUploadComplete(bool success)

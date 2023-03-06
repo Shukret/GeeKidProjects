@@ -47,7 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.9</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.17</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2020.3.15f2</UnityVersion>
@@ -58,12 +58,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Marks\Mark_Level_20.cs" />
     <Compile Include="Assets\Scripts\ScriptsForLevels\Level_20\ToSettingsPositions.cs" />
+    <Compile Include="Assets\Scripts\AudioScripts\AudioIndicator.cs" />
     <Compile Include="Assets\Scripts\Share\ShareImage.cs" />
     <Compile Include="Assets\Scripts\RatingFullText.cs" />
     <Compile Include="Assets\Scripts\ScriptsForLevels\Level_8\DragColor.cs" />
     <Compile Include="Assets\Scripts\Marks\Star.cs" />
     <Compile Include="Assets\Scripts\LeaderBoard\LeaderboardShowcase.cs" />
-    <Compile Include="Assets\Scripts\AudioScripts\YesIndicatorAudio.cs" />
     <Compile Include="Assets\Scripts\SettingsManager.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Marks\Block.cs" />
@@ -78,7 +78,6 @@
     <Compile Include="Assets\Scripts\Share\ShareScreen.cs" />
     <Compile Include="Assets\Scripts\DragDrop.cs" />
     <Compile Include="Assets\Scripts\GoToTarget.cs" />
-    <Compile Include="Assets\Scripts\AudioScripts\NoIndicatorAudio.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\TimeLife.cs" />
     <Compile Include="Assets\Scripts\ScriptsForLevels\Level_5\DawnApple.cs" />
@@ -90,6 +89,7 @@
     <Compile Include="Assets\Scripts\TriggerVictory.cs" />
     <Compile Include="Assets\Scripts\DeleteCollider.cs" />
     <Compile Include="Assets\Scripts\ScriptsForLevels\Level_18\Level_18.cs" />
+    <Compile Include="Assets\Scripts\ScriptsForLevels\Level_16\Scien.cs" />
     <Compile Include="Assets\Scripts\Events\EventOnEnableSettings.cs" />
     <Compile Include="Assets\Scripts\Zoom_tuch.cs" />
     <Compile Include="Assets\Scripts\AccelerationController.cs" />
@@ -724,26 +724,26 @@
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Psdimporter.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Path.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Path.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InternalAPIEditorBridge.001">
+      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
