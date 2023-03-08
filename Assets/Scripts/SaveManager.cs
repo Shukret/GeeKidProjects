@@ -104,7 +104,7 @@ public class SaveManager : MonoBehaviour
             Save();
         }
     }
-    public Language Langeage
+    public Language Language
     {
         get
         {
@@ -170,6 +170,14 @@ public class SaveManager : MonoBehaviour
         PlayerPrefs.SetString("userName", userName);
         string stringIsAudioMusicVibrationOn = isAudioOn.ToString() + "," + isMusicOn.ToString() + "," + isVibrationOn.ToString();
         PlayerPrefs.SetString("stringIsAudioMusicVibrationOn", stringIsAudioMusicVibrationOn);
+        if (Language == Language.English)
+        {
+            PlayerPrefs.SetString("language", "English");
+        }
+        if (Language == Language.Russian)
+        {
+            PlayerPrefs.SetString("language", "Russian");
+        }
         string stringIsClueOpen = "";
         for (int i = 0; i < isClueOpen.Length; i++)
         {
@@ -202,6 +210,15 @@ public class SaveManager : MonoBehaviour
             isAudioOn = Convert.ToBoolean(stringIsAudioMusicVibrationOn.Split(',')[0]);
             isMusicOn = Convert.ToBoolean(stringIsAudioMusicVibrationOn.Split(',')[1]);
             isVibrationOn = Convert.ToBoolean(stringIsAudioMusicVibrationOn.Split(',')[2]);
+            string languageString = PlayerPrefs.GetString("language");
+            if (languageString == "English")
+            {
+                Language = Language.English;
+            }
+            if (languageString == "Russian")
+            {
+                Language = Language.Russian;
+            }
             string stringIsClueOpen = PlayerPrefs.GetString("isClueOpen");
             string[] stringsIsClueOpen = stringIsClueOpen.Split(',');
             for (int i = 0; i < stringsIsClueOpen.Length; i++)

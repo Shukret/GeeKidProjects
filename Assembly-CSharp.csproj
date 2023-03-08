@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\AnimationsScripts\AnimationMessagePanel.cs" />
     <Compile Include="Assets\Scripts\ScriptsForLevels\Level_3\DeleteTarget.cs" />
     <Compile Include="Assets\Scripts\Share\ShareScreen.cs" />
+    <Compile Include="Assets\Scripts\LangeageManager.cs" />
     <Compile Include="Assets\Scripts\DragDrop.cs" />
     <Compile Include="Assets\Scripts\GoToTarget.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
@@ -93,7 +94,7 @@
     <Compile Include="Assets\Scripts\Events\EventOnEnableSettings.cs" />
     <Compile Include="Assets\Scripts\Zoom_tuch.cs" />
     <Compile Include="Assets\Scripts\AccelerationController.cs" />
-    <Compile Include="Assets\Scripts\LangeageManager.cs" />
+    <Compile Include="Assets\Scripts\LevelTexts.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

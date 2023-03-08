@@ -46,7 +46,8 @@ public class LevelManager : MonoBehaviour
             if (saveManager.GetIsClueOpen(useLevelNumber - 1))
             {
                 cluePanel.SetActive(true);
-                ShowClueText(saveManager.Langeage, useLevelNumber - 1); 
+                clueTextPlace.text = useLevel.GetComponent<LevelTexts>().ShowClueText(saveManager.Language);
+   
             }
             else
             {
@@ -59,7 +60,8 @@ public class LevelManager : MonoBehaviour
                     saveManager.Ideas -= removeIdeas;
                     UpdateIdeas();
                     cluePanel.SetActive(true);
-                    ShowClueText(saveManager.Langeage, useLevelNumber - 1);
+                    clueTextPlace.text = useLevel.GetComponent<LevelTexts>().ShowClueText(saveManager.Language);
+                    //ShowClueText(saveManager.Language, useLevelNumber - 1);
                     saveManager.SetIsClueOpen(true, useLevelNumber - 1);
                 }
             }
@@ -67,17 +69,17 @@ public class LevelManager : MonoBehaviour
         
     }
 
-    private void ShowClueText(Language langeage, int index)
-    {
-        if (langeage == Language.Russian)
-        {
-            clueTextPlace.text = clueTextRussian[index].ToUpper();
-        }
-        if (langeage == Language.English)
-        {
-            clueTextPlace.text = clueTextEnglish[index].ToUpper();
-        }
-    }
+    //private void ShowClueText(Language langeage, int index)
+    //{
+    //    if (langeage == Language.Russian)
+    //    {
+    //        clueTextPlace.text = clueTextRussian[index].ToUpper();
+    //    }
+    //    if (langeage == Language.English)
+    //    {
+    //        clueTextPlace.text = clueTextEnglish[index].ToUpper();
+    //    }
+    //}
 
     public void addIdeas(int countIdeas)
     {
@@ -141,24 +143,24 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(time);
         if (saveManager.isVibrationOn) Handheld.Vibrate();
         messagePanel.SetActive(true);
-        ShowMessageText(saveManager.Langeage, useLevelNumber - 1);
+        textMessage.text = useLevel.GetComponent<LevelTexts>().ShowMessageText(saveManager.Language);
         useLevelNumber++;
         if(useLevelNumber > saveManager.LastLevel) saveManager.LastLevel++;     
         buttonNext.onClick.RemoveAllListeners();
         buttonNext.onClick.AddListener(NextLevel);
     }
 
-    private void ShowMessageText(Language language, int index)
-    {
-        if (language == Language.Russian)
-        {
-            textMessage.text = messagesRussian[index].ToUpper();
-        }
-        if (language == Language.English)
-        {
-            textMessage.text = messagesEnglish[index].ToUpper();
-        }
-    }
+    //private void ShowMessageText(Language language, int index)
+    //{
+    //    if (language == Language.Russian)
+    //    {
+    //        textMessage.text = messagesRussian[index].ToUpper();
+    //    }
+    //    if (language == Language.English)
+    //    {
+    //        textMessage.text = messagesEnglish[index].ToUpper();
+    //    }
+    //}
 
     private void OnEnable()
     {
@@ -281,25 +283,24 @@ public class LevelManager : MonoBehaviour
         if (useLevel != null) Destroy(useLevel);
         int index = numberLevel - 1;
         levelsPanel.SetActive(true);
-        if (saveManager.Langeage == Language.English)
+        if (saveManager.Language == Language.English)
             useLevel = Instantiate(prefabListEnglish[index], targetSpawn.transform);
-        if (saveManager.Langeage == Language.Russian)
+        if (saveManager.Language == Language.Russian)
             useLevel = Instantiate(prefabList[index], targetSpawn.transform);
-        ShowLevelText(saveManager.Langeage, numberLevel);
+        textMission.text = useLevel.GetComponent<LevelTexts>().ShowDescriptionText(saveManager.Language);
+        ShowLevelText(saveManager.Language, numberLevel);
     }
 
     private void ShowLevelText(Language langeage, int numberLevel)
     {
         int index = numberLevel - 1;
-        if (saveManager.Langeage == Language.English)
+        if (saveManager.Language == Language.English)
         {
             numberLevels.text = "LEVEL " + numberLevel.ToString();
-            textMission.text = missionDescEnglish[index].ToUpper();
         }      
-        if (saveManager.Langeage == Language.Russian)
+        if (saveManager.Language == Language.Russian)
         {
             numberLevels.text = "спнбемэ " + numberLevel.ToString();
-            textMission.text = missionDescRussian[index].ToUpper();
         }
             
     }

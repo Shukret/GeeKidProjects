@@ -2914,6 +2914,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6269177911957269944}
+  - component: {fileID: -5725191075442823266}
   m_Layer: 5
   m_Name: Level_11
   m_TagString: Untagged
@@ -2963,6 +2964,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -343}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &-5725191075442823266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6269177911957269947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a29e6313a4c88f4e89960d47915f08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descriptionTextsEng: What will be the result?
+  descriptionTextsRus: "\u041A\u0430\u043A\u043E\u0439 \u0431\u0443\u0434\u0435\u0442
+    \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442?"
+  messageTextsEng: candidate of mathematical sciences!
+  messageTextsRus: "\u043A\u0430\u043D\u0434\u0438\u0434\u0430\u0442 \u043C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445
+    \u043D\u0430\u0443\u043A!"
+  clueTextsEng: a nut equals a number of 0 and 1
+  clueTextsRus: "\u043E\u0440\u0435\u0445 \u0440\u0430\u0432\u0435\u043D \u0447\u0438\u0441\u043B\u0443
+    \u0438\u0437 0 \u0438 1"
 --- !u!1 &6347648867098727195
 GameObject:
   m_ObjectHideFlags: 0

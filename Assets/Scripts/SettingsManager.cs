@@ -200,7 +200,7 @@ public class SettingsManager : MonoBehaviour
             language = Language.Russian;
         }
         langeageManager.SwitchLangeage(language);
-        saveManager.Langeage = language;
+        saveManager.Language = language;
     }
     private IEnumerator ShowErrorUserName(int time, string textError)
     {

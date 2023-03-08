@@ -854,6 +854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5531126373473131475}
+  - component: {fileID: 8296690121709638322}
   m_Layer: 5
   m_Name: Level_7
   m_TagString: Level
@@ -893,6 +894,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8296690121709638322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2698207626535328866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a29e6313a4c88f4e89960d47915f08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descriptionTextsEng: Move one match so that you get the correct equality
+  descriptionTextsRus: "\u041F\u0435\u0440\u0435\u043B\u043E\u0436\u0438 \u043E\u0434\u043D\u0443
+    \u0441\u043F\u0438\u0447\u043A\u0443 \u0442\u0430\u043A, \u0447\u0442\u043E\u0431\u044B
+    \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C \u0432\u0435\u0440\u043D\u043E\u0435
+    \u0440\u0430\u0432\u0435\u043D\u0441\u0442\u0432\u043E"
+  messageTextsEng: You are chewing!
+  messageTextsRus: "\u0422\u044B \u0436\u0436\u0435\u0448\u044C!"
+  clueTextsEng: this 9 looks suspicious
+  clueTextsRus: "\u044D\u0442\u0430 9 \u0432\u044B\u0433\u043B\u044F\u0434\u0438\u0442
+    \u043F\u043E\u0434\u043E\u0437\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u043E"
 --- !u!1 &5809806352476507159
 GameObject:
   m_ObjectHideFlags: 0

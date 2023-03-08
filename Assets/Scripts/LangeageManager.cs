@@ -17,7 +17,7 @@ public class LangeageManager : MonoBehaviour
 
     private void Awake()
     {
-        SwitchLangeage(saveManager.Langeage);
+        SwitchLangeage(saveManager.Language);
     }
     public void SwitchLangeage(Language language)
     {

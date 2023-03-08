@@ -46,9 +46,9 @@ public class LeaderboardShowcase : MonoBehaviour
                 image.sprite = sprites[2];
                 indexer = 0;
             }
-            if (saveManager.Langeage == Language.Russian)
+            if (saveManager.Language == Language.Russian)
                 mark_ratingLeader[i].gameObject.GetComponentsInChildren<TMP_Text>()[0].text = $"{i + 1}. Загрузка";
-            if (saveManager.Langeage == Language.English)
+            if (saveManager.Language == Language.English)
                 mark_ratingLeader[i].gameObject.GetComponentsInChildren<TMP_Text>()[0].text = $"{i + 1}. Loading";
         }
     }
@@ -89,7 +89,12 @@ public class LeaderboardShowcase : MonoBehaviour
         {
             if (i == maxLeader) return;
             if (entries[i].Username == saveManager.UserName)
-                leaderObj[i].GetComponentsInChildren<TMP_Text>()[0].text = $"{i + 1}. Вы";
+            {
+                if (saveManager.Language == Language.English)
+                    leaderObj[i].GetComponentsInChildren<TMP_Text>()[0].text = $"{i + 1}. You";
+                if (saveManager.Language == Language.Russian)
+                    leaderObj[i].GetComponentsInChildren<TMP_Text>()[0].text = $"{i + 1}. Вы";
+            } 
             else
                 leaderObj[i].GetComponentsInChildren<TMP_Text>()[0].text = $"{i + 1}. {entries[i].Username}";
             leaderObj[i].GetComponentsInChildren<TMP_Text>()[1].text = $"{entries[i].Score}";

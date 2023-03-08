@@ -222,6 +222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6560300515525954401}
+  - component: {fileID: -1358377410107500873}
   m_Layer: 5
   m_Name: Level_8
   m_TagString: Level
@@ -251,6 +252,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &-1358377410107500873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3655138546164354256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a29e6313a4c88f4e89960d47915f08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descriptionTextsEng: Help the artist of this game find the color purple... Please
+  descriptionTextsRus: "\u041F\u043E\u043C\u043E\u0433\u0438 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A\u0443
+    \u044D\u0442\u043E\u0439 \u0438\u0433\u0440\u044B \u043D\u0430\u0439\u0442\u0438
+    \u0444\u0438\u043E\u043B\u0435\u0442\u043E\u0432\u044B\u0439 \u0446\u0432\u0435\u0442...
+    \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430"
+  messageTextsEng: Even the developers couldn't handle it!
+  messageTextsRus: "\u0414\u0430\u0436\u0435 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u0438
+    \u0441 \u044D\u0442\u0438\u043C \u043D\u0435 \u0441\u043F\u0440\u0430\u0432\u0438\u043B\u0438\u0441\u044C!"
+  clueTextsEng: Looks like I need to mix some colors
+  clueTextsRus: "\u041A\u0430\u0436\u0435\u0442\u0441\u044F, \u043D\u0443\u0436\u043D\u043E
+    \u0441\u043C\u0435\u0448\u0430\u0442\u044C \u043F\u0430\u0440\u043E\u0447\u043A\u0443
+    \u0446\u0432\u0435\u0442\u043E\u0432"
 --- !u!1 &4690400441213476266
 GameObject:
   m_ObjectHideFlags: 0

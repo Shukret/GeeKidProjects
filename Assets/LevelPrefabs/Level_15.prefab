@@ -757,6 +757,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3010037863231073530}
+  - component: {fileID: 2783319091053400311}
   m_Layer: 5
   m_Name: Level_15
   m_TagString: Untagged
@@ -786,3 +787,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2783319091053400311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5791001007815150067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a29e6313a4c88f4e89960d47915f08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descriptionTextsEng: What's harder?
+  descriptionTextsRus: "\u0427\u0442\u043E \u0442\u044F\u0436\u0435\u043B\u0435\u0435?"
+  messageTextsEng: What a thoughtful answer
+  messageTextsRus: "\u041A\u0430\u043A\u043E\u0439 \u0432\u0437\u0432\u0435\u0448\u0435\u043D\u043D\u044B\u0439
+    \u043E\u0442\u0432\u0435\u0442"
+  clueTextsEng: kg of fluff = kg of bricks
+  clueTextsRus: "\u043A\u0433 \u043F\u0443\u0445\u0430 = \u043A\u0433 \u043A\u0438\u0440\u043F\u0438\u0447\u0435\u0439"
