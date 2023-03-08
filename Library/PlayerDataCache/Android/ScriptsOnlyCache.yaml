@@ -17,6 +17,7 @@ ScriptsOnlyBuild:
     - GoToTarget
     - InputNumber
     - ItemSlot
+    - LangeageManager
     - LeaderboardShowcase
     - LevelManager
     - Level_18
@@ -119,47 +120,47 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1492}
-    - Class: 114
       Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 1556}
+      Script: {instanceID: 1496}
     - Class: 114
-      Script: {instanceID: 1572}
+      Script: {instanceID: 1558}
     - Class: 114
-      Script: {instanceID: 1586}
+      Script: {instanceID: 1574}
     - Class: 114
-      Script: {instanceID: 1654}
+      Script: {instanceID: 1588}
     - Class: 114
-      Script: {instanceID: 1686}
+      Script: {instanceID: 1656}
     - Class: 114
-      Script: {instanceID: 1700}
+      Script: {instanceID: 1688}
     - Class: 114
-      Script: {instanceID: 1868}
+      Script: {instanceID: 1702}
     - Class: 114
-      Script: {instanceID: 2076}
+      Script: {instanceID: 1870}
     - Class: 114
-      Script: {instanceID: 2146}
+      Script: {instanceID: 2078}
     - Class: 114
-      Script: {instanceID: 2258}
+      Script: {instanceID: 2148}
     - Class: 114
-      Script: {instanceID: 2380}
+      Script: {instanceID: 2260}
     - Class: 114
-      Script: {instanceID: 2690}
+      Script: {instanceID: 2382}
     - Class: 114
-      Script: {instanceID: 2852}
+      Script: {instanceID: 2692}
     - Class: 114
       Script: {instanceID: 2854}
     - Class: 114
-      Script: {instanceID: 2900}
+      Script: {instanceID: 2856}
     - Class: 114
-      Script: {instanceID: 3046}
+      Script: {instanceID: 2902}
     - Class: 114
-      Script: {instanceID: 3074}
+      Script: {instanceID: 3048}
     - Class: 114
-      Script: {instanceID: 3168}
+      Script: {instanceID: 3076}
     - Class: 114
-      Script: {instanceID: 3320}
+      Script: {instanceID: 3170}
+    - Class: 114
+      Script: {instanceID: 3322}
     - Class: 114
       Script: {instanceID: 3332}
     - Class: 114
@@ -189,37 +190,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4104}
     - Class: 114
-      Script: {instanceID: 4416}
+      Script: {instanceID: 4414}
     - Class: 114
-      Script: {instanceID: 4480}
+      Script: {instanceID: 4478}
     - Class: 114
-      Script: {instanceID: 4612}
+      Script: {instanceID: 4610}
     - Class: 114
-      Script: {instanceID: 4616}
+      Script: {instanceID: 4614}
     - Class: 114
-      Script: {instanceID: 4686}
+      Script: {instanceID: 4684}
     - Class: 114
-      Script: {instanceID: 4792}
+      Script: {instanceID: 4790}
     - Class: 114
-      Script: {instanceID: 4822}
+      Script: {instanceID: 4820}
     - Class: 114
-      Script: {instanceID: 4916}
+      Script: {instanceID: 4914}
     - Class: 114
-      Script: {instanceID: 4978}
+      Script: {instanceID: 4976}
     - Class: 114
-      Script: {instanceID: 5066}
+      Script: {instanceID: 5064}
     - Class: 114
-      Script: {instanceID: 5212}
+      Script: {instanceID: 5210}
     - Class: 114
-      Script: {instanceID: 5216}
+      Script: {instanceID: 5214}
     - Class: 114
-      Script: {instanceID: 5404}
+      Script: {instanceID: 5402}
     - Class: 114
-      Script: {instanceID: 5658}
+      Script: {instanceID: 5656}
     - Class: 114
-      Script: {instanceID: 5690}
+      Script: {instanceID: 5688}
     - Class: 114
-      Script: {instanceID: 5764}
+      Script: {instanceID: 5762}
+    - Class: 114
+      Script: {instanceID: 23870}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -455,7 +458,7 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
-      Hash: c3cfb450922e7d479b4114be37f32f60
+      Hash: 67a846e1f1ae6921d3f4e17092e750a5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SettingsManager
@@ -587,7 +590,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeController
   - hash:
       serializedVersion: 2
-      Hash: 8f28a0e54713b0cab7b8210d427953fb
+      Hash: f734f6eed272af70e3a6e5ef0f0fe986
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SaveManager
@@ -719,7 +722,7 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
-      Hash: 12fe66dfcebc033f9e289c8fc2c11625
+      Hash: e5acc19256f8aa07a78904be697dbaac
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelManager
@@ -1017,6 +1020,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AccelerationController
+  - hash:
+      serializedVersion: 2
+      Hash: 07645022f95d00b8bba960a8ab9eb349
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LangeageManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

@@ -10,6 +10,7 @@ public class SaveManager : MonoBehaviour
     [SerializeField] public bool isAudioOn, isVibrationOn, isMusicOn;
     [SerializeField] private bool[] isClueOpen;
     [SerializeField] private int[] countTry;
+    [SerializeField] private Language language;
 
     private void Awake()
     {
@@ -100,6 +101,18 @@ public class SaveManager : MonoBehaviour
         set
         {
             userName = value;
+            Save();
+        }
+    }
+    public Language Langeage
+    {
+        get
+        {
+            return language;
+        }
+        set
+        {
+            language = value;
             Save();
         }
     }

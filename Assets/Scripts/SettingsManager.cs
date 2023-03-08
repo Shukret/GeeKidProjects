@@ -16,7 +16,7 @@ public class SettingsManager : MonoBehaviour
     [SerializeField] private GameObject errorUserName;
     [SerializeField] private LeaderboardShowcase leaderboardShowcase;
     [SerializeField] private AudioManager audioManager;
-
+    [SerializeField] private LangeageManager langeageManager;
     private LevelManager levelManager;
     private bool isAudioOn, isVibrationOn, isMusicOn;
 
@@ -29,7 +29,13 @@ public class SettingsManager : MonoBehaviour
         settingsPanelEvent.NotifyEnable += ShowButtonAudioAndVibrationAndMusic;
         
     }
-
+    private void StartMusic()
+    {
+        if (saveManager.isMusicOn)
+            audioManager.music.volume = 1;
+        else
+            audioManager.music.volume = 0;
+    }
 
     public void LoadSwitch()
     {
@@ -123,7 +129,7 @@ public class SettingsManager : MonoBehaviour
     public void Repost()
     {
         //Делаем репост
-        StartCoroutine(TakeScreenshotAndShare());
+        StartCoroutine(LoadImageAndShare());
     }
     public void Shop()
     {
@@ -152,7 +158,7 @@ public class SettingsManager : MonoBehaviour
     public void Policy()
     {
         //Смотрим политику конфиденциальности
-        Application.OpenURL("https://docs.unity3d.com/ScriptReference/Application.OpenURL.html");
+        Application.OpenURL("https://disk.yandex.ru/i/_Wr_1Jz_PVOLMQ");
     }
     public void InputUserName()
     {
@@ -182,13 +188,19 @@ public class SettingsManager : MonoBehaviour
         }
         return false;
     }
-    public void EnglishLanguage()
+    public void SwitchLangeage(string langString)
     {
-        //Включаем английский язык
-    }
-    public void RussianLangeage()
-    {
-        //Включаем русский язык
+        Language language = Language.Russian;
+        if (langString == "English")
+        {
+            language = Language.English;
+        }    
+        if (langString == "Русский")
+        {
+            language = Language.Russian;
+        }
+        langeageManager.SwitchLangeage(language);
+        saveManager.Langeage = language;
     }
     private IEnumerator ShowErrorUserName(int time, string textError)
     {
@@ -212,13 +224,10 @@ public class SettingsManager : MonoBehaviour
         Destroy(ss);
 
         new NativeShare().AddFile(filePath)
-            .SetSubject("Subject goes here").SetText("Hello world!").SetUrl("https://github.com/yasirkula/UnityNativeShare")
+            .SetSubject("Subject goes here").SetText("Играй вместе со мной").SetUrl("https://github.com/yasirkula/UnityNativeShare")
             .SetCallback((result, shareTarget) => Debug.Log("Share result: " + result + ", selected app: " + shareTarget))
             .Share();
 
-        // Share on WhatsApp only, if installed (Android only)
-        //if( NativeShare.TargetExists( "com.whatsapp" ) )
-        //	new NativeShare().AddFile( filePath ).AddTarget( "com.whatsapp" ).Share();
     }
     private IEnumerator LoadImageAndShare()
     {

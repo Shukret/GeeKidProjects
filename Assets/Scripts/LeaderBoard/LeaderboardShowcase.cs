@@ -46,7 +46,10 @@ public class LeaderboardShowcase : MonoBehaviour
                 image.sprite = sprites[2];
                 indexer = 0;
             }
-            mark_ratingLeader[i].gameObject.GetComponentsInChildren<TMP_Text>()[0].text = $"{i + 1}. Загрузка";
+            if (saveManager.Langeage == Language.Russian)
+                mark_ratingLeader[i].gameObject.GetComponentsInChildren<TMP_Text>()[0].text = $"{i + 1}. Загрузка";
+            if (saveManager.Langeage == Language.English)
+                mark_ratingLeader[i].gameObject.GetComponentsInChildren<TMP_Text>()[0].text = $"{i + 1}. Loading";
         }
     }
     private void ShowScore()

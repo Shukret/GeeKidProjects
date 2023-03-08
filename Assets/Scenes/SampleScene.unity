@@ -572,7 +572,7 @@ GameObject:
   - component: {fileID: 53649367}
   - component: {fileID: 53649366}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: MessageText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3166,7 +3166,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 636203243}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.3122651
+  m_Size: 0.31226513
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4335,7 +4335,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &328241954
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5454,8 +5454,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 173, y: 955}
-  m_SizeDelta: {x: 515.1804, y: 176.9789}
+  m_AnchoredPosition: {x: 226.86574, y: 955}
+  m_SizeDelta: {x: 622.9119, y: 176.9789}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &416131511
 MonoBehaviour:
@@ -7286,7 +7286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u044B\u044B\u044B\u044B\u044B\u044B"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 31b315aa65d9ef443a365f253ae3b8bc, type: 2}
   m_sharedMaterial: {fileID: -8258193473815810981, guid: 31b315aa65d9ef443a365f253ae3b8bc, type: 2}
@@ -7995,7 +7995,7 @@ RectTransform:
   m_Father: {fileID: 2061190938}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.00000011920929, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -11805,7 +11805,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 942883260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1579714809}
+        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
+        m_MethodName: SwitchLangeage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &942883260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12103,6 +12115,133 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1994555785883326594, guid: e641694f9c3bbc642bc3cd1282e720c1, type: 3}
   m_PrefabInstance: {fileID: 980239282}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &980467529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 980467531}
+  - component: {fileID: 980467530}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &980467530
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980467529}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 48431da627ba8ef40a14f5d4217b7cf2, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &980467531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980467529}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1118051661}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &989587769
 GameObject:
   m_ObjectHideFlags: 0
@@ -12760,14 +12899,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d779fb2ae12e5458970eadb4ccd4cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueText:
+  clueTextRussian:
   - "\u041F\u0440\u043E\u0441\u0442\u043E \u043F\u043E\u0441\u0447\u0438\u0442\u0430\u0439!
     1...2...3..."
   - "\u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439 \u0438\u0445 \u0440\u0430\u0437\u0434\u0432\u0438\u043D\u0443\u0442\u044C"
   - "\u0414\u0435\u043B\u043E \u0432 \u043F\u0435\u0440\u0432\u044B\u0445 \u0431\u0443\u043A\u0432\u0430\u0445"
   - "\u0412\u0421\u0415 \u043C\u044B \u043A\u043E\u0433\u0434\u0430-\u0442\u043E
     \u0437\u0430\u0442\u0440\u0443\u0434\u043D\u044F\u043B\u0438\u0441\u044C"
-  - "\u041D\u0435 \u0437\u043D\u0430\u0435\u0448\u044C, \u043A\u0430\u043A \u043D\u0430\u0437\u044B\u0432\u0430\u044E\u0442\u0441\u044F
+  - "\u041D\u0435 \u0437\u043D\u0430\u0435\u0448\u044C \u043A\u0430\u043A \u043D\u0430\u0437\u044B\u0432\u0430\u044E\u0442\u0441\u044F
     \u043A\u043E\u043D\u0432\u0443\u043B\u044C\u0441\u0438\u0432\u043D\u044B\u0435
     \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F \u0440\u0443\u043A\u043E\u0439?"
   - "\u0410 \u043A\u0430\u043A \u0436\u0435 \u0447\u0438\u0441\u043B\u0430 \u043D\u0430
@@ -12775,17 +12914,17 @@ MonoBehaviour:
   - "\u042D\u0442\u0430 9 \u0432\u044B\u0433\u043B\u044F\u0434\u0438\u0442 \u043F\u043E\u0434\u043E\u0437\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u043E"
   - "\u041A\u0430\u0436\u0435\u0442\u0441\u044F, \u043D\u0443\u0436\u043D\u043E \u0441\u043C\u0435\u0448\u0430\u0442\u044C
     \u043F\u0430\u0440\u043E\u0447\u043A\u0443 \u0446\u0432\u0435\u0442\u043E\u0432"
-  - "\u0421 \u043A\u0430\u043A\u043E\u0433\u043E \u044D\u0442\u0430\u0436\u0430 \u043B\u0438\u0444\u0442
-    \u0437\u0430\u0431\u0438\u0440\u0430\u0435\u0442 \u043B\u044E\u0434\u0435\u0439?"
+  - "\u041E\u0442\u043A\u0443\u0434\u0430 \u043B\u0438\u0444\u0442 \u0437\u0430\u0431\u0438\u0440\u0430\u0435\u0442
+    \u043B\u044E\u0434\u0435\u0439?"
   - "\u0414\u0430\u0432\u0430\u0439 \u043D\u0435 \u0431\u0443\u0434\u0435\u043C \u043D\u0438\u0447\u0435\u0433\u043E
     \u0434\u0435\u043B\u0430\u0442\u044C"
   - "\u041E\u0440\u0435\u0445 \u0440\u0430\u0432\u0435\u043D \u0447\u0438\u0441\u043B\u0443
     \u0438\u0437 0 \u0438 1"
   - "\u041D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0445
-    \u0438 1 \u0431\u043E\u043B\u044C\u0448\u043E\u0439"
+    \u0438 \u043E\u0434\u0438\u043D \u0431\u043E\u043B\u044C\u0448\u043E\u0439"
   - "\u041F\u0440\u043E\u0441\u0442\u043E \u0441\u043B\u043E\u0436\u0438"
   - "\u0420\u0430\u0437\u0434\u0432\u0438\u043D\u044C \u0438\u0445!"
-  - "\u043A\u0433 \u043F\u0443\u0445\u0430 = \u043A\u0433 \u043A\u0438\u0440\u043F\u0438\u0447\u0435\u0439"
+  - "\u043A\u0433 \u043F\u0443\u0445\u0430 = \u043A\u0433 \u043A\u0440\u0438\u043F\u0438\u0447\u0435\u0439"
   - "\u041F\u043E\u0447\u0435\u043C\u0443-\u0442\u043E \u0438\u0434\u0435\u044F \u0443
     \u043B\u044E\u0434\u0435\u0439 \u0430\u0441\u0441\u043E\u0446\u0438\u0438\u0440\u0443\u0435\u0442\u0441\u044F
     \u0441 \u043B\u0430\u043C\u043F\u043E\u0447\u043A\u043E\u0439"
@@ -12793,12 +12932,34 @@ MonoBehaviour:
     \u0440\u0430\u0437 \u0443\u0434\u0430\u0440\u0438\u0442\u044C \u043F\u043E \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u0443
     - \u043E\u043D \u0441\u043B\u043E\u043C\u0430\u0435\u0442\u0441\u044F"
   - "\u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439 \u043F\u0435\u0440\u0435\u0432\u043E\u0440\u043E\u0442"
-  - "\u0421\u0440\u0435\u0434\u0438 \u043F\u0440\u0430\u0432\u044B\u0445"
-  - "\u0413\u0434\u0435, \u0433\u043E\u0432\u043E\u0440\u0438\u0448\u044C, \u0442\u044B
+  - "\u0441\u0440\u0435\u0434\u0438 \u043F\u0440\u0430\u0432\u044B\u0445"
+  - "\u0433\u0434\u0435, \u0433\u043E\u0432\u043E\u0440\u0438\u0448\u044C, \u0442\u044B
     \u0442\u043E\u0433\u0434\u0430 \u0434\u043E\u0441\u0442\u0430\u043B \u043B\u0430\u043C\u043F\u043E\u0447\u043A\u0443?"
-  - "\u0427\u0438\u0441\u043B\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u0442 \u0438\u0437
+  - "\u0447\u0438\u0441\u043B\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u0442 \u0438\u0437
     \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u0438\u0445 \u0446\u0438\u0444\u0440"
-  messages:
+  clueTextEnglish:
+  - Just count! 1...2...3...
+  - Try to move them
+  - It's about the letters
+  - ALL of us have struggled at some point
+  - Do you know what convulsive hand movements are called?
+  - But what about the numbers on the buttons?
+  - This 9 looks suspicious
+  - Looks like I need to mix some colors
+  - Where does the elevator take people from?
+  - Let's not do anything
+  - A nut equals a number of 0 and 1
+  - Several small ones and one big one
+  - Just fold
+  - Move them apart!
+  - kg of down = kg of bricks
+  - For some reason, people associate the idea with a light bulb
+  - if you hit the object several times, it will break
+  - try a coup
+  - among the right
+  - where, you say, did you get the light bulb then?
+  - numbers are made up of multiple digits
+  messagesRussian:
   - "\u041E\u0442\u043B\u0438\u0447\u043D\u043E\u0435 \u043D\u0430\u0447\u0430\u043B\u043E!"
   - "\u0422\u0435\u0431\u044F \u043D\u0435 \u043F\u0440\u043E\u0432\u0435\u0434\u0435\u0448\u044C!"
   - "\u041E\u0445 \u0443\u0436 \u044D\u0442\u0438 \u0441\u043B\u043E\u0432\u0430"
@@ -12806,16 +12967,16 @@ MonoBehaviour:
   - "\u041D\u0430\u0434\u0435\u044E\u0441\u044C, \u0442\u044B \u0434\u043E\u0441\u0442\u0430\u0442\u043E\u0447\u043D\u043E
     \u0431\u0435\u0440\u0435\u0436\u043D\u043E \u043E\u0431\u0449\u0430\u0435\u0448\u044C\u0441\u044F
     \u0441 \u043F\u0440\u0438\u0440\u043E\u0434\u043E\u0439"
-  - "\u0417\u043D\u0430\u0442\u043E\u043A \u043C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u043A\u0438!"
+  - "\u0437\u043D\u0430\u0442\u043E\u043A \u043C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u043A\u0438!"
   - "\u0422\u044B \u0436\u0436\u0435\u0448\u044C!"
   - "\u0414\u0430\u0436\u0435 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u0438
     \u0441 \u044D\u0442\u0438\u043C \u043D\u0435 \u0441\u043F\u0440\u0430\u0432\u0438\u043B\u0438\u0441\u044C!"
   - "\u041B\u0438\u0444\u0442 \u043C\u043E\u0436\u043D\u043E \u043E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C,
     \u0430 \u0442\u0435\u0431\u044F \u043D\u0435\u0442"
-  - "\u0422\u0432\u043E\u0435\u043C\u0443 \u0442\u0435\u0440\u043F\u0435\u043D\u0438\u044E
+  - "\u0442\u0432\u043E\u0435\u043C\u0443 \u0442\u0435\u0440\u043F\u0435\u043D\u0438\u044E
     \u043F\u043E\u0437\u0430\u0432\u0438\u0434\u0443\u0435\u0442 \u0434\u0430\u0436\u0435
-    \u0425\u0430\u0442\u0438\u043A\u043E!"
-  - "\u041A\u0430\u043D\u0434\u0438\u0434\u0430\u0442 \u043C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445
+    \u0425\u0430\u0442\u0438\u043A\u043E"
+  - "\u043A\u0430\u043D\u0434\u0438\u0434\u0430\u0442 \u043C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445
     \u043D\u0430\u0443\u043A!"
   - "\u042D\u0442\u043E \u0431\u044B\u043B\u043E \u043D\u0435\u0441\u043B\u043E\u0436\u043D\u043E!"
   - "\u0422\u043E\u043B\u044C\u043A\u043E \u043D\u0435 \u0433\u043E\u0432\u043E\u0440\u0438,
@@ -12826,19 +12987,41 @@ MonoBehaviour:
   - "\u041A\u0430\u043A\u043E\u0439 \u0432\u0437\u0432\u0435\u0448\u0435\u043D\u043D\u044B\u0439
     \u043E\u0442\u0432\u0435\u0442"
   - "\u042D\u0432\u0440\u0438\u043A\u0430!"
-  - "\u0422\u044B \u043D\u0430\u0448 \u0441\u043F\u0430\u0441\u0438\u0442\u0435\u043B\u044C!"
-  - "\u041F\u043E\u0447\u0442\u0438 \u043E\u0431\u043C\u0430\u043D\u0443\u043B \u0432\u0440\u0435\u043C\u044F!"
+  - "\u0422\u044B \u043D\u0430\u0441 \u0441\u043F\u0430\u0441\u0438\u0442\u0435\u043B\u044C"
+  - "\u041F\u043E\u0447\u0442\u0438 \u043E\u0431\u043C\u0430\u043D\u0443\u043B \u0432\u0440\u0435\u043C\u044F"
   - "\u0417\u043E\u0440\u043A\u0438\u0439 \u0433\u043B\u0430\u0437"
   - "\u041D\u0435 \u0437\u043D\u0430\u043B, \u0447\u0442\u043E \u0442\u044B \u0438\u043D\u0436\u0435\u043D\u0435\u0440"
   - "\u0413\u0435\u043D\u0438\u0430\u043B\u044C\u043D\u043E!"
-  missionDesc:
-  - "\u0421\u043A\u043E\u043B\u044C\u043A\u043E \u0437\u0434\u0435\u0441\u044C \u043A\u0443\u0441\u043E\u0447\u043A\u043E\u0432
+  messagesEnglish:
+  - Great start!
+  - You will not be fooled!
+  - Oh those words
+  - Yes, you are an optimist!
+  - I hope you are careful enough to communicate with nature
+  - mathematician!
+  - You are chewing!
+  - Even the developers couldn't handle it!
+  - The elevator can be stopped, but you are not
+  - even Hachiko will envy your patience
+  - candidate of mathematical sciences!
+  - It was easy!
+  - Don't tell me you looked at those equations above... they're wrong
+  - You are a star!
+  - What a thoughtful answer
+  - Eureka!
+  - You are our savior
+  - Almost cheated time
+  - keen eye
+  - Didn't know you were an engineer
+  - Brilliant!
+  missionDescRussian:
+  - "\u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0437\u0434\u0435\u0441\u044C \u043A\u0443\u0441\u043E\u0447\u043A\u043E\u0432
     \u043F\u0438\u0446\u0446\u044B?"
   - "\u0410 \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0447\u0430\u0441\u0442\u0435\u0439
     \u043F\u0438\u0446\u0446\u044B \u0437\u0434\u0435\u0441\u044C?"
   - 
   - "\u041D\u0430\u0439\u0434\u0438 \u043D\u0430\u043F\u043E\u043B\u043E\u0432\u0438\u043D\u0443
-    \u043F\u043E\u043B\u043D\u044B\u0439 \u0441\u0442\u0430\u043A\u0430\u043D \u0441\u0440\u0435\u0434\u0438
+    \u043F\u043E\u043B\u043D\u044B\u0439 \u0441\u0442\u0430\u043A\u0430\u043D\u0441\u0440\u0435\u0434\u0438
     \u043D\u0430\u043F\u043E\u043B\u043E\u0432\u0438\u043D\u0443 \u043F\u0443\u0441\u0442\u044B\u0445"
   - "\u041F\u043E\u043C\u043E\u0433\u0438 \u043C\u0430\u043B\u044C\u0447\u0438\u043A\u0443
     \u0434\u043E\u0441\u0442\u0430\u0442\u044C \u044F\u0431\u043B\u043E\u043A\u043E"
@@ -12851,8 +13034,14 @@ MonoBehaviour:
     \u044D\u0442\u043E\u0439 \u0438\u0433\u0440\u044B \u043D\u0430\u0439\u0442\u0438
     \u0444\u0438\u043E\u043B\u0435\u0442\u043E\u0432\u044B\u0439 \u0446\u0432\u0435\u0442...
     \u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430"
-  - 
-  - "\u041A\u0430\u0436\u0435\u0442\u0441\u044F \u044D\u0442\u043E \u044E\u0431\u0438\u043B\u0435\u0439\u043D\u043E\u0435
+  - "\u0432 \u0442\u043E\u0440\u0433\u043E\u0432\u043E\u043C \u0446\u0435\u043D\u0442\u0440\u0435
+    7 \u044D\u0442\u0430\u0436\u0435\u0439. \u0427\u0435\u043C \u0432\u044B\u0448\u0435
+    \u044D\u0442\u0430\u0436, \u0442\u0435\u043C \u0431\u043E\u043B\u044C\u0448\u0435
+    \u043F\u043E\u0441\u0435\u0442\u0438\u0442\u0435\u043B\u0435\u0439 \u0442\u0443\u0434\u0430
+    \u0445\u043E\u0447\u0435\u0442. \u041D\u0430 \u043A\u0430\u043A\u043E\u0439 \u044D\u0442\u0430\u0436
+    \u0447\u0430\u0449\u0435 \u0432\u0441\u0435\u0433\u043E \u043F\u0440\u0438\u0431\u044B\u0432\u0430\u0435\u0442
+    \u043B\u0438\u0444\u0442?"
+  - "\u041A\u0430\u0436\u0435\u0442\u0441\u044F, \u044D\u0442\u043E \u044E\u0431\u0438\u043B\u0435\u0439\u043D\u043E\u0435
     \u0437\u0430\u0434\u0430\u043D\u0438\u0435. \u041C\u043E\u0436\u0435\u0442, \u043F\u0440\u043E\u0441\u0442\u043E
     \u043F\u0435\u0440\u0435\u0434\u043E\u0445\u043D\u0435\u043C?"
   - "\u041A\u0430\u043A\u043E\u0439 \u0431\u0443\u0434\u0435\u0442 \u0440\u0435\u0437\u0443\u043B\u044C\u0442\u0430\u0442?"
@@ -12862,13 +13051,36 @@ MonoBehaviour:
   - "\u0427\u0442\u043E \u0442\u044F\u0436\u0435\u043B\u0435\u0435?"
   - "\u041A\u0430\u0436\u0435\u0442\u0441\u044F, \u0443\u0447\u0435\u043D\u043E\u043C\u0443
     \u043D\u0443\u0436\u043D\u0430 \u0438\u0434\u0435\u044F, \u043F\u043E\u043C\u043E\u0436\u0435\u0448\u044C?"
-  - "\u041F\u043E\u0442\u0443\u0448\u0438 \u043F\u043E\u0436\u0430\u0440!"
+  - "\u041F\u043E\u0442\u0443\u0448\u0438 \u043F\u043E\u0436\u0430\u0440"
   - "\u041F\u0435\u0440\u0435\u043C\u0435\u0441\u0442\u0438 \u043F\u0435\u0441\u043E\u043A
     \u043D\u0430\u0432\u0435\u0440\u0445"
   - "\u041D\u0430\u0439\u0434\u0438 \u043B\u0438\u0448\u043D\u0435\u0435"
   - "\u0417\u0430\u043F\u0443\u0441\u0442\u0438 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C"
   - "\u041A\u0430\u043A\u043E\u0435 \u0437\u0434\u0435\u0441\u044C \u0441\u0430\u043C\u043E\u0435
     \u0431\u043E\u043B\u044C\u0448\u043E\u0435 \u0447\u0438\u0441\u043B\u043E?"
+  missionDescEnglish:
+  - how many slices of pizza are there?
+  - How many slices of pizza are there?
+  - 
+  - Find a half-full glass among half-empty ones
+  - Help the boy get the apple
+  - What is the biggest number here?
+  - Move one match so that you get the correct equality
+  - Help the artist of this game find the color purple... Please
+  - in the shopping center 7 floors. The higher the floor, the more visitors want
+    to go there. Which floor does the elevator most often reach?
+  - It looks like it's an anniversary mission. Can we just take a break?
+  - What will be the result?
+  - How many squares are there?
+  - What will be the result?
+  - How many triangles are there?
+  - What's harder?
+  - It seems that the scientist needs an idea, can you help?
+  - Put out the fire
+  - Move the sand up
+  - Find the extra
+  - Start the mechanism
+  - What is the largest number here?
   levelsPanel: {fileID: 1676724857}
   messagePanel: {fileID: 1081662725}
   settingsPanel: {fileID: 1740483795}
@@ -12900,6 +13112,28 @@ MonoBehaviour:
   - {fileID: 3090084833145481201, guid: addd25a6fedb07f4db3e43e4017b992e, type: 3}
   - {fileID: 7380938010430642694, guid: 83a2c38c5bcbfb443a5814f5f6219f00, type: 3}
   - {fileID: 6958727352054946223, guid: de363081663bc2f41a98439a5b247477, type: 3}
+  - {fileID: 776366658163100698, guid: 21ebd225c6857a0418915e09186883cb, type: 3}
+  - {fileID: 343436201011834861, guid: bfa1dd847a5102b4a8318a3f31d5c32b, type: 3}
+  - {fileID: 3906086035258852564, guid: 4295029f8b900a140a7f55dc3166f11c, type: 3}
+  - {fileID: 2698207626535328866, guid: 74eea07ce4859104dba710d6c839f6fc, type: 3}
+  - {fileID: 3655138546164354256, guid: 3410d31bdbc69d84e8e73c0803d1173b, type: 3}
+  - {fileID: 4532814556060476882, guid: 2f66eaf6dd177ba4daa755ba2c847368, type: 3}
+  - {fileID: 4798435633878241020, guid: 334dc87daff047c45911069eb19e0da7, type: 3}
+  - {fileID: 6269177911957269947, guid: ae400d234d5d6cb45a5754842c535f32, type: 3}
+  - {fileID: 3728148373929795809, guid: f8e7c6df779044243ab07dc843c5945c, type: 3}
+  - {fileID: 1242255774674864254, guid: 0a1146c06cfa1a042866d4cbc8d36742, type: 3}
+  - {fileID: 7938352886653656060, guid: e06adfb9a229ad242881057ffe1dc462, type: 3}
+  - {fileID: 5791001007815150067, guid: 161e8c2b4a1780d42ac39d590e7283cf, type: 3}
+  - {fileID: 1693035496547983755, guid: d37facb231892c74e846ce3ea4274abc, type: 3}
+  - {fileID: 4731565379806019815, guid: 0e263e1ece6137e4e85ddb8d838e2944, type: 3}
+  - {fileID: 3711702694348746239, guid: 91fd57b25b1efaa489bd4f6d88aa8da8, type: 3}
+  - {fileID: 7827014080496630136, guid: 6dd30c94b8cb8ea439e90a6d1a8cbee8, type: 3}
+  - {fileID: 8397307834978392806, guid: 52f8932fd2ff4d2468e4bd330e51bef9, type: 3}
+  - {fileID: 7888962308555524587, guid: 1c124bb752326874ea01152932293529, type: 3}
+  prefabListEnglish:
+  - {fileID: 3090084833145481201, guid: addd25a6fedb07f4db3e43e4017b992e, type: 3}
+  - {fileID: 7380938010430642694, guid: 83a2c38c5bcbfb443a5814f5f6219f00, type: 3}
+  - {fileID: 4041554726686990313, guid: 15ab3ed4650cdd041aae68d97e98e1d7, type: 3}
   - {fileID: 776366658163100698, guid: 21ebd225c6857a0418915e09186883cb, type: 3}
   - {fileID: 343436201011834861, guid: bfa1dd847a5102b4a8318a3f31d5c32b, type: 3}
   - {fileID: 3906086035258852564, guid: 4295029f8b900a140a7f55dc3166f11c, type: 3}
@@ -13951,6 +14185,7 @@ Transform:
   - {fileID: 325413973}
   - {fileID: 899068031}
   - {fileID: 46924908}
+  - {fileID: 980467531}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13969,7 +14204,7 @@ MonoBehaviour:
   audioYesIndicator: {fileID: 325413974}
   audioNoIndicator: {fileID: 899068032}
   audioVictory: {fileID: 46924909}
-  music: {fileID: 46924909}
+  music: {fileID: 980467530}
 --- !u!1 &1122311972
 GameObject:
   m_ObjectHideFlags: 0
@@ -14092,8 +14327,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -138.79, y: 197.05}
-  m_SizeDelta: {x: 404.43, y: 80.8021}
+  m_AnchoredPosition: {x: 131.39, y: 195.3522}
+  m_SizeDelta: {x: 944.8, y: 84.1975}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1140244951
 MonoBehaviour:
@@ -14149,7 +14384,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -16555,7 +16790,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1394539705}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1579714809}
+        m_TargetAssemblyTypeName: SettingsManager, Assembly-CSharp
+        m_MethodName: SwitchLangeage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: English
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1394539705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16842,8 +17089,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 72.848, y: 389.7201}
-  m_SizeDelta: {x: 803.83, y: 80.802}
+  m_AnchoredPosition: {x: 137.36406, y: 386.32455}
+  m_SizeDelta: {x: 932.8621, y: 87.5931}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1432402532
 MonoBehaviour:
@@ -21998,11 +22245,12 @@ MonoBehaviour:
   ideas: 0
   score: 0
   userName: 
-  isAudioOn: 0
-  isVibrationOn: 0
-  isMusicOn: 0
+  isAudioOn: 1
+  isVibrationOn: 1
+  isMusicOn: 1
   isClueOpen: 000000000000000000000000000000000000000000
   countTry: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  language: 1
 --- !u!4 &1445865010
 Transform:
   m_ObjectHideFlags: 0
@@ -23367,8 +23615,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 646274727}
   m_HandleRect: {fileID: 646274726}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 0.9999999
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -23457,6 +23705,7 @@ MonoBehaviour:
   errorUserName: {fileID: 1859796566}
   leaderboardShowcase: {fileID: 58851952}
   audioManager: {fileID: 1118051662}
+  langeageManager: {fileID: 1725355717}
   usersName: []
 --- !u!4 &1579714810
 Transform:
@@ -24492,7 +24741,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1676724858
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24935,7 +25184,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0010375977, y: -0.010986328}
+  m_AnchoredPosition: {x: -0.0009765625, y: -0.010986328}
   m_SizeDelta: {x: 0, y: -0.39990234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1704241569
@@ -25108,6 +25357,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710472150}
   m_CullTransparentMesh: 1
+--- !u!1 &1725355716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1725355718}
+  - component: {fileID: 1725355717}
+  m_Layer: 0
+  m_Name: LanguageManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1725355717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725355716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af904dbdbdb090244af74ba96ca19fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelText: {fileID: 416131511}
+  settingsText: {fileID: 817411320}
+  shopText: {fileID: 1432402532}
+  ratingText: {fileID: 1140244951}
+  likeText: {fileID: 2091928969}
+  repostText: {fileID: 1967159197}
+  policyText: {fileID: 308453100}
+  messageText: {fileID: 53649366}
+  ClueText: {fileID: 1964951994}
+  ratingGlobalText: {fileID: 789075183}
+  placeHolderText: {fileID: 852987629}
+  saveManager: {fileID: 1445865009}
+--- !u!4 &1725355718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725355716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 568.0729, y: 1139.6796, z: -429.9159}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1726097955
 GameObject:
   m_ObjectHideFlags: 0
@@ -29128,8 +29432,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -71.888, y: -241.1}
-  m_SizeDelta: {x: 557.3431, y: 98.4401}
+  m_AnchoredPosition: {x: 126.62, y: -239.4022}
+  m_SizeDelta: {x: 954.35, y: 95.0444}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1967159197
 MonoBehaviour:
@@ -29185,7 +29489,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -30935,8 +31239,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -136.19, y: -15.741}
-  m_SizeDelta: {x: 409.6264, y: 80.8021}
+  m_AnchoredPosition: {x: 118.4784, y: -12.3454}
+  m_SizeDelta: {x: 918.9633, y: 74.0109}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2091928969
 MonoBehaviour:
@@ -30992,7 +31296,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0

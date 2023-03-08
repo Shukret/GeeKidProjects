@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scripts\Events\EventOnEnableSettings.cs" />
     <Compile Include="Assets\Scripts\Zoom_tuch.cs" />
     <Compile Include="Assets\Scripts\AccelerationController.cs" />
+    <Compile Include="Assets\Scripts\LangeageManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
