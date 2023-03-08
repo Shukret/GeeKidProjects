@@ -182,47 +182,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3896}
     - Class: 114
-      Script: {instanceID: 3916}
+      Script: {instanceID: 3908}
     - Class: 114
-      Script: {instanceID: 4004}
+      Script: {instanceID: 3918}
     - Class: 114
-      Script: {instanceID: 4020}
+      Script: {instanceID: 4006}
     - Class: 114
-      Script: {instanceID: 4104}
+      Script: {instanceID: 4022}
     - Class: 114
-      Script: {instanceID: 4414}
+      Script: {instanceID: 4106}
     - Class: 114
-      Script: {instanceID: 4478}
+      Script: {instanceID: 4416}
     - Class: 114
-      Script: {instanceID: 4610}
+      Script: {instanceID: 4480}
     - Class: 114
-      Script: {instanceID: 4614}
+      Script: {instanceID: 4612}
     - Class: 114
-      Script: {instanceID: 4684}
+      Script: {instanceID: 4616}
     - Class: 114
-      Script: {instanceID: 4790}
+      Script: {instanceID: 4686}
     - Class: 114
-      Script: {instanceID: 4820}
+      Script: {instanceID: 4792}
     - Class: 114
-      Script: {instanceID: 4914}
+      Script: {instanceID: 4822}
     - Class: 114
-      Script: {instanceID: 4976}
+      Script: {instanceID: 4916}
     - Class: 114
-      Script: {instanceID: 5064}
+      Script: {instanceID: 4978}
     - Class: 114
-      Script: {instanceID: 5210}
+      Script: {instanceID: 5066}
     - Class: 114
-      Script: {instanceID: 5214}
+      Script: {instanceID: 5212}
     - Class: 114
-      Script: {instanceID: 5402}
+      Script: {instanceID: 5216}
     - Class: 114
-      Script: {instanceID: 5656}
+      Script: {instanceID: 5404}
     - Class: 114
-      Script: {instanceID: 5688}
+      Script: {instanceID: 5658}
     - Class: 114
-      Script: {instanceID: 5762}
+      Script: {instanceID: 5690}
     - Class: 114
-      Script: {instanceID: 23870}
+      Script: {instanceID: 5764}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -692,6 +692,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 07645022f95d00b8bba960a8ab9eb349
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LangeageManager
+  - hash:
+      serializedVersion: 2
       Hash: 451938b15bf3fb69636b99c2c47e4f32
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1020,12 +1026,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AccelerationController
-  - hash:
-      serializedVersion: 2
-      Hash: 07645022f95d00b8bba960a8ab9eb349
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LangeageManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
