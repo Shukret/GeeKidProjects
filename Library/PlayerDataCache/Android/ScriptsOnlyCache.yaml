@@ -2,6 +2,8 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AccelerationController
+    - AnimationForward
+    - AnimationIncline
     - AnimationMessagePanel
     - AnimationsIndicator
     - AudioIndicator
@@ -19,6 +21,8 @@ ScriptsOnlyBuild:
     - ItemSlot
     - LangeageManager
     - LeaderboardShowcase
+    - LearningPull
+    - LearningTuch
     - LevelManager
     - LevelTexts
     - Level_18
@@ -226,6 +230,14 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5692}
     - Class: 114
       Script: {instanceID: 5766}
+    - Class: 114
+      Script: {instanceID: 27524}
+    - Class: 114
+      Script: {instanceID: 33290}
+    - Class: 114
+      Script: {instanceID: 100352}
+    - Class: 114
+      Script: {instanceID: 179342}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1035,6 +1047,30 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AccelerationController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LearningTuch
+  - hash:
+      serializedVersion: 2
+      Hash: 78d061bc54c8c3ab58a051b2272c75d6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LearningPull
+  - hash:
+      serializedVersion: 2
+      Hash: 7f58b29296c074ccba86e9d82b8c6e65
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AnimationForward
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AnimationIncline
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

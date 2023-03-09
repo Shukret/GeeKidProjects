@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\ScriptsForLevels\Level_8\DragColor.cs" />
     <Compile Include="Assets\Scripts\Marks\Star.cs" />
     <Compile Include="Assets\Scripts\LeaderBoard\LeaderboardShowcase.cs" />
+    <Compile Include="Assets\Scripts\LevelTexts.cs" />
     <Compile Include="Assets\Scripts\SettingsManager.cs" />
     <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Marks\Block.cs" />
@@ -94,7 +95,10 @@
     <Compile Include="Assets\Scripts\Events\EventOnEnableSettings.cs" />
     <Compile Include="Assets\Scripts\Zoom_tuch.cs" />
     <Compile Include="Assets\Scripts\AccelerationController.cs" />
-    <Compile Include="Assets\Scripts\LevelTexts.cs" />
+    <Compile Include="Assets\Scripts\Learning\LearningTuch.cs" />
+    <Compile Include="Assets\Scripts\Learning\LearningPull.cs" />
+    <Compile Include="Assets\Scripts\AnimationsScripts\AnimationForward.cs" />
+    <Compile Include="Assets\Scripts\AnimationsScripts\AnimationIncline.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
